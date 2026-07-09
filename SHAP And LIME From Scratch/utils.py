@@ -111,7 +111,7 @@ def My_importance_plot(intercept, coeff, feature_names, feature_values=None,
     # Title
     predicted_value = intercept + coeff.sum()
     if title is None:
-        method_emoji = "" if method.upper() == "LIME" else "🎯"
+        method_emoji = "" if method.upper() == "LIME" else ""
         title = f"{method_emoji} {method.upper()} Explanation\n"
         title += f"Predicted = {predicted_value:.4f} (Intercept = {intercept:.4f})"
     plt.title(title, fontsize=13, fontweight='bold', pad=15)
